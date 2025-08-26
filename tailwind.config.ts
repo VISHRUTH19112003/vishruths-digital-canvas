@@ -52,6 +52,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// GitHub-style custom colors
+				'github-green': 'hsl(var(--github-green))',
+				'github-green-muted': 'hsl(var(--github-green-muted))',
+				'github-surface': 'hsl(var(--github-surface))',
+				'github-border': 'hsl(var(--github-border))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -67,6 +72,18 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-hero': 'var(--gradient-hero)',
+			},
+			boxShadow: {
+				'github': 'var(--shadow-github)',
+				'card': 'var(--shadow-card)',
+			},
+			transition: {
+				'smooth': 'var(--transition-smooth)',
+				'bounce': 'var(--transition-bounce)',
 			},
 			keyframes: {
 				'accordion-down': {
