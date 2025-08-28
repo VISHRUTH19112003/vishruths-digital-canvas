@@ -92,7 +92,14 @@ const Navigation = () => {
               </a>
             </Button>
 
-            <Button size="sm" className="bg-primary hover:bg-primary/90">
+            <Button 
+              size="sm" 
+              className="bg-primary hover:bg-primary/90"
+              onClick={() => {
+                // Open resume in new tab
+                window.open('/lovable-uploads/3cf015bf-6df5-4f0b-bb40-845dd69b594b.png', '_blank');
+              }}
+            >
               <Download className="w-4 h-4 mr-2" />
               Resume
             </Button>
@@ -144,7 +151,14 @@ const Navigation = () => {
                   </a>
                 </Button>
 
-                <Button className="w-full bg-primary hover:bg-primary/90">
+                <Button 
+                  className="w-full bg-primary hover:bg-primary/90"
+                  onClick={() => {
+                    // Open resume in new tab
+                    window.open('/lovable-uploads/3cf015bf-6df5-4f0b-bb40-845dd69b594b.png', '_blank');
+                    setIsOpen(false);
+                  }}
+                >
                   <Download className="w-4 h-4 mr-2" />
                   Download Resume
                 </Button>
