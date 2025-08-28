@@ -28,17 +28,17 @@ const About = () => {
                 */}
                 <div className="flex items-center gap-3">
                   <MapPin className="w-4 h-4 text-muted-foreground" />
-                  <span>Bangalore, India</span> {/* Update your location */}
+                  <span>Bengaluru, Karnataka, India</span>
                 </div>
                 
                 <div className="flex items-center gap-3">
                   <Calendar className="w-4 h-4 text-muted-foreground" />
-                  <span>Available for opportunities</span>
+                  <span>Available for internships & opportunities</span>
                 </div>
                 
                 <div className="flex items-center gap-3">
                   <Heart className="w-4 h-4 text-muted-foreground" />
-                  <span>Passionate about clean code & UX</span>
+                  <span>Hackathon winner & AI/ML enthusiast</span>
                 </div>
               </CardContent>
             </Card>
@@ -53,30 +53,28 @@ const About = () => {
             */}
             <div className="space-y-4 text-muted-foreground">
               <p>
-                I'm a passionate software developer with a love for creating innovative 
-                solutions that make a difference. My journey in tech started during my 
-                college years, where I discovered the power of code to solve real-world problems.
+                Hello! I'm Vishruth H V, a 7th semester Information Science & Engineering student at 
+                BMS College of Engineering, Bengaluru. My journey in tech combines strong academic 
+                foundation with practical software engineering experience.
               </p>
               
               <p>
-                When I'm not coding, you'll find me exploring new technologies, contributing 
-                to open-source projects, or sharing knowledge with the developer community. 
-                I believe in continuous learning and staying up-to-date with the latest 
-                industry trends.
+                I specialize in Full Stack Development, AI/ML, and building scalable solutions. 
+                From winning college hackathons with LLM-powered chatbots to working as a Software 
+                Development Engineer Intern at Mindstack, I thrive on turning innovative ideas into reality.
               </p>
               
               <p>
-                I'm particularly interested in full-stack development, cloud technologies, 
-                and building scalable applications that can grow with business needs. 
-                Let's connect and build something amazing together!
+                I balance technical depth with clean, aesthetic design sense and am passionate about 
+                real-world impactful projects. Always eager to learn and contribute to meaningful solutions.
               </p>
             </div>
 
             {/* Quick Stats */}
             <div className="grid grid-cols-2 gap-4 mt-8">
               <div className="text-center p-4 bg-github-surface rounded-lg border border-github-border">
-                <div className="text-2xl font-bold text-github-green">3+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
+                <div className="text-2xl font-bold text-github-green">7th</div>
+                <div className="text-sm text-muted-foreground">Semester Student</div>
               </div>
               
               <div className="text-center p-4 bg-github-surface rounded-lg border border-github-border">

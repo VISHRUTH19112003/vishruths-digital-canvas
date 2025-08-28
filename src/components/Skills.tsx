@@ -8,35 +8,34 @@ const Skills = () => {
   */}
   const skillCategories = [
     {
-      title: "Frontend Development",
-      icon: <Palette className="w-5 h-5" />,
-      skills: [
-        "React", "TypeScript", "JavaScript", "Next.js", "Vue.js",
-        "HTML5", "CSS3", "Tailwind CSS", "SCSS", "Material-UI"
-      ]
-    },
-    {
-      title: "Backend Development", 
+      title: "Programming Languages",
       icon: <Code className="w-5 h-5" />,
       skills: [
-        "Node.js", "Python", "Java", "Express.js", "Django",
-        "REST APIs", "GraphQL", "Microservices", "Socket.io"
+        "Python", "Java", "JavaScript", "TypeScript", "C"
       ]
     },
     {
-      title: "Database & Tools",
+      title: "Web Development", 
+      icon: <Palette className="w-5 h-5" />,
+      skills: [
+        "React", "Next.js", "Vite", "TailwindCSS", "ShadCN UI",
+        "Node.js", "Express.js", "HTML5", "CSS3"
+      ]
+    },
+    {
+      title: "Backend & Databases",
       icon: <Database className="w-5 h-5" />,
       skills: [
-        "MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase",
-        "Git", "Docker", "Webpack", "Jest", "Cypress"
+        "Firebase", "Supabase", "MySQL", "MongoDB", 
+        "RESTful APIs", "Flask", "Twilio API"
       ]
     },
     {
-      title: "Cloud & DevOps",
+      title: "AI/ML & Cloud Tools",
       icon: <Cloud className="w-5 h-5" />,
       skills: [
-        "AWS", "Google Cloud", "Azure", "Vercel", "Netlify",
-        "CI/CD", "Linux", "Nginx", "Kubernetes", "Terraform"
+        "Scikit-learn", "PyTorch", "TensorFlow", "Genkit", 
+        "Docker", "Git/GitHub", "UiPath", "Wireshark", "ngrok"
       ]
     }
   ];
@@ -87,23 +86,26 @@ const Skills = () => {
             {/* 
               UPDATE SECTION: Add your certifications or current learning below
             */}
+            {/* 
+              UPDATE SECTION: Add your certifications or current learning below
+            */}
             <Badge 
               variant="outline" 
               className="text-lg py-2 px-4 border-github-green text-github-green hover:bg-github-green-muted"
             >
-              AWS Certified Developer
+              Data Analytics & Big Data
             </Badge>
             <Badge 
               variant="outline" 
               className="text-lg py-2 px-4 border-github-green text-github-green hover:bg-github-green-muted"
             >
-              React Professional Certificate
+              Socket Programming
             </Badge>
             <Badge 
               variant="outline" 
               className="text-lg py-2 px-4 border-github-green text-github-green hover:bg-github-green-muted"
             >
-              Currently Learning: DevOps
+              Currently Learning: Advanced AI/ML
             </Badge>
           </div>
         </div>

@@ -10,47 +10,91 @@ const Projects = () => {
   */
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce platform with user authentication, payment integration, and admin dashboard. Built with React, Node.js, and MongoDB.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "JWT"],
-      githubUrl: "https://github.com/vishruth/ecommerce-platform", // Update with your actual links
-      liveUrl: "https://your-ecommerce-demo.com", // Update with your actual links
-      stars: 24,
-      forks: 8,
+      title: "SessionBudget - AI Finance App",
+      description: "Advanced personal finance web app built with Next.js, featuring AI-powered financial category suggestions, session-based persistence, CSV export, and data visualization with Recharts.",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500&h=300&fit=crop",
+      technologies: ["Next.js", "React", "TailwindCSS", "ShadCN", "Genkit AI", "Recharts"],
+      githubUrl: "https://github.com/vishruth/sessionbudget",
+      liveUrl: "https://sessionbudget-demo.com",
+      stars: 32,
+      forks: 12,
       featured: true
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+      title: "LLM-Powered Chatbot (Hackathon Winner)",
+      description: "College hackathon winning project featuring LLM-powered chatbot with voice recognition and text-based chat capabilities. Built with team members Sourya Sarkar & Suraj N Reddy.",
+      image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=500&h=300&fit=crop",
+      technologies: ["Python", "LLM", "Voice Recognition", "Flask", "JavaScript"],
+      githubUrl: "https://github.com/vishruth/llm-chatbot",
+      liveUrl: "https://llm-chatbot-demo.com",
+      stars: 28,
+      forks: 9,
+      featured: true
+    },
+    {
+      title: "TaskFlow - Advanced To-Do App",
+      description: "Full-stack task management application with prioritization, categories, reminders, and modern UI. Features real-time sync and user authentication.",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      technologies: ["Vue.js", "Firebase", "Vuetify", "Socket.io"],
-      githubUrl: "https://github.com/vishruth/task-manager", // Update with your actual links
-      liveUrl: "https://your-task-app-demo.com", // Update with your actual links
-      stars: 18,
-      forks: 5,
-      featured: true
-    },
-    {
-      title: "Weather Dashboard",
-      description: "A responsive weather dashboard that displays current weather, forecasts, and weather maps using multiple APIs and data visualization.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
-      technologies: ["React", "Chart.js", "OpenWeather API", "Tailwind CSS"],
-      githubUrl: "https://github.com/vishruth/weather-dashboard", // Update with your actual links
-      liveUrl: "https://your-weather-demo.com", // Update with your actual links
-      stars: 12,
-      forks: 3,
+      technologies: ["React", "Firebase", "Supabase", "TailwindCSS"],
+      githubUrl: "https://github.com/vishruth/taskflow",
+      liveUrl: "https://taskflow-demo.com",
+      stars: 22,
+      forks: 7,
       featured: false
     },
     {
-      title: "Blog Platform",
-      description: "A modern blog platform with markdown support, SEO optimization, and a content management system for writers and creators.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68e2c6b3d3?w=500&h=300&fit=crop",
-      technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-      githubUrl: "https://github.com/vishruth/blog-platform", // Update with your actual links
-      liveUrl: "https://your-blog-demo.com", // Update with your actual links
-      stars: 31,
-      forks: 12,
+      title: "Deep Q-Learning Snake Game AI",
+      description: "Reinforcement Learning AI agent for Snake Game implemented with PyTorch and Pygame. Features training visualization and performance metrics.",
+      image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=500&h=300&fit=crop",
+      technologies: ["Python", "PyTorch", "Pygame", "Deep Q-Learning"],
+      githubUrl: "https://github.com/vishruth/snake-ai",
+      liveUrl: "https://snake-ai-demo.com",
+      stars: 45,
+      forks: 18,
+      featured: false
+    },
+    {
+      title: "Fake Review Detection System",
+      description: "MLG AAT project implementing 3 ML models including ensemble methods for detecting fake reviews, based on recent research papers. Deployed as mobile/web app.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
+      technologies: ["Python", "Scikit-learn", "Flask", "Machine Learning"],
+      githubUrl: "https://github.com/vishruth/fake-review-detection",
+      liveUrl: "https://fake-review-demo.com",
+      stars: 19,
+      forks: 6,
+      featured: false
+    },
+    {
+      title: "YouTube Trending Analyzer",
+      description: "Big Data project using Hadoop and Spark to analyze large-scale YouTube datasets and extract insights about trending videos and user behavior patterns.",
+      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&h=300&fit=crop",
+      technologies: ["Hadoop", "Spark", "Python", "Big Data Analytics"],
+      githubUrl: "https://github.com/vishruth/youtube-analyzer",
+      liveUrl: "https://youtube-analyzer-demo.com",
+      stars: 15,
+      forks: 4,
+      featured: false
+    },
+    {
+      title: "E-Commerce Bag Retail Platform",
+      description: "Amazon-like bag retail platform with comprehensive features including product catalog, shopping cart, checkout system, and user management.",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
+      technologies: ["React", "Node.js", "MongoDB", "Express.js"],
+      githubUrl: "https://github.com/vishruth/ecommerce-bags",
+      liveUrl: "https://ecommerce-bags-demo.com",
+      stars: 26,
+      forks: 10,
+      featured: false
+    },
+    {
+      title: "Hotel Management System",
+      description: "Comprehensive hotel management system built with npm and Vite, featuring booking management, billing system, and customer records management.",
+      image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&h=300&fit=crop",
+      technologies: ["JavaScript", "Vite", "HTML5", "CSS3"],
+      githubUrl: "https://github.com/vishruth/hotel-management",
+      liveUrl: "https://hotel-mgmt-demo.com",
+      stars: 13,
+      forks: 5,
       featured: false
     }
   ];

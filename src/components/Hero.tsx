@@ -32,13 +32,12 @@ const Hero = () => {
               UPDATE SECTION: Change your title and description below
             */}
             <h2 className="text-2xl lg:text-3xl text-muted-foreground mb-6">
-              Full Stack Developer & Problem Solver
+              Software Development Engineer | B.E. Student at BMS College of Engineering
             </h2>
             
             <p className="text-lg text-muted-foreground max-w-2xl mb-8">
-              Passionate about creating elegant solutions to complex problems. 
-              I specialize in building scalable web applications with modern technologies 
-              and love turning ideas into reality through code.
+              7th Semester Information Science & Engineering student passionate about Full Stack Development, 
+              AI/ML, and building scalable solutions. Won college hackathon with LLM-powered chatbot.
             </p>
 
             {/* CTA Buttons */}

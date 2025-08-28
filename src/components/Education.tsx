@@ -8,38 +8,56 @@ const Education = () => {
   */}
   const education = [
     {
-      degree: "Bachelor of Technology in Computer Science",
-      institution: "XYZ University", // Update with your university
-      location: "Bangalore, India", // Update with your location
-      duration: "2018 - 2022", // Update with your duration
-      grade: "8.5 CGPA", // Update with your grade
+      degree: "Bachelor of Engineering in Information Science & Engineering",
+      institution: "BMS College of Engineering",
+      location: "Bengaluru, Karnataka, India",
+      duration: "2021 - 2025",
+      grade: "Currently in 7th Semester",
       achievements: [
-        "Dean's List for Academic Excellence",
-        "Best Final Year Project Award",
-        "Active member of Coding Club"
+        "Won College Hackathon with LLM-powered chatbot",
+        "Active participation in academic hackathons & innovation challenges",
+        "Collaborators: Sourya Sarkar & Suraj N Reddy"
       ],
       relevantCourses: [
         "Data Structures & Algorithms",
         "Database Management Systems", 
         "Software Engineering",
-        "Web Technologies",
-        "Machine Learning"
+        "Machine Learning",
+        "Big Data Analytics",
+        "Computer Networks"
       ]
     },
     {
-      degree: "Higher Secondary Certificate (12th Grade)",
-      institution: "ABC High School", // Update with your school
-      location: "Bangalore, India", // Update with your location
-      duration: "2016 - 2018", // Update with your duration
-      grade: "92%", // Update with your grade
+      degree: "Pre-University Education (12th Grade)",
+      institution: "Sri Maruthi PU College",
+      location: "Bengaluru, Karnataka, India",
+      duration: "2019 - 2021",
+      grade: "Excellent Performance",
       achievements: [
-        "School Topper in Computer Science",
-        "National Merit Scholarship Recipient"
+        "Strong foundation in Science & Mathematics",
+        "Computer Science specialization"
       ],
       relevantCourses: [
         "Computer Science",
         "Mathematics",
-        "Physics"
+        "Physics",
+        "Chemistry"
+      ]
+    },
+    {
+      degree: "Secondary School Certificate (10th Grade)",
+      institution: "Vibgyor High, Kadugodi",
+      location: "Bengaluru, Karnataka, India",
+      duration: "2018 - 2019",
+      grade: "Excellent Performance",
+      achievements: [
+        "Well-rounded academic performance",
+        "Foundation for technical education"
+      ],
+      relevantCourses: [
+        "Mathematics",
+        "Science",
+        "Computer Applications"
       ]
     }
   ];
@@ -139,8 +157,18 @@ const Education = () => {
             */}
             <Card className="bg-card border-github-border shadow-card">
               <CardContent className="p-4 text-center">
-                <h4 className="font-semibold mb-2">Full Stack Web Development</h4>
-                <p className="text-sm text-muted-foreground mb-2">Coursera</p>
+                <h4 className="font-semibold mb-2">Big Data & Analytics</h4>
+                <p className="text-sm text-muted-foreground mb-2">Hadoop & Spark</p>
+                <Badge variant="secondary" className="bg-github-surface">
+                  Project Completed
+                </Badge>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-github-border shadow-card">
+              <CardContent className="p-4 text-center">
+                <h4 className="font-semibold mb-2">RPA Development</h4>
+                <p className="text-sm text-muted-foreground mb-2">UiPath Platform</p>
                 <Badge variant="secondary" className="bg-github-surface">
                   Certified
                 </Badge>
@@ -149,18 +177,8 @@ const Education = () => {
 
             <Card className="bg-card border-github-border shadow-card">
               <CardContent className="p-4 text-center">
-                <h4 className="font-semibold mb-2">AWS Cloud Practitioner</h4>
-                <p className="text-sm text-muted-foreground mb-2">Amazon Web Services</p>
-                <Badge variant="secondary" className="bg-github-surface">
-                  Certified
-                </Badge>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-card border-github-border shadow-card">
-              <CardContent className="p-4 text-center">
-                <h4 className="font-semibold mb-2">React Masterclass</h4>
-                <p className="text-sm text-muted-foreground mb-2">Udemy</p>
+                <h4 className="font-semibold mb-2">Network Security</h4>
+                <p className="text-sm text-muted-foreground mb-2">Wireshark & Protocol Analysis</p>
                 <Badge variant="secondary" className="bg-github-surface">
                   Completed
                 </Badge>

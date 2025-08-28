@@ -8,66 +8,24 @@ const Experience = () => {
   */}
   const experiences = [
     {
-      title: "Senior Full Stack Developer",
-      company: "TechCorp Solutions", // Update with your company
-      location: "Bangalore, India", // Update with location
-      duration: "Jan 2023 - Present", // Update with your duration
-      type: "Full-time",
-      description: "Lead developer responsible for building and maintaining scalable web applications using modern technologies. Collaborated with cross-functional teams to deliver high-quality software solutions.",
-      responsibilities: [
-        "Developed and maintained 5+ production applications serving 10,000+ users",
-        "Led a team of 3 junior developers and conducted code reviews",
-        "Implemented CI/CD pipelines reducing deployment time by 60%",
-        "Mentored new team members and established coding standards",
-        "Collaborated with product managers to define technical requirements"
-      ],
-      technologies: ["React", "Node.js", "PostgreSQL", "AWS", "Docker", "TypeScript"],
-      achievements: [
-        "Improved application performance by 40% through optimization",
-        "Successfully delivered 8 major features on time",
-        "Received 'Employee of the Quarter' award"
-      ]
-    },
-    {
-      title: "Frontend Developer",
-      company: "StartupXYZ", // Update with your company
-      location: "Remote", // Update with location
-      duration: "Jun 2021 - Dec 2022", // Update with your duration
-      type: "Full-time",
-      description: "Focused on creating engaging user interfaces and improving user experience for the company's main product. Worked closely with design team to implement pixel-perfect designs.",
-      responsibilities: [
-        "Built responsive web applications using React and Vue.js",
-        "Integrated RESTful APIs and implemented state management",
-        "Collaborated with UX/UI designers to implement modern interfaces",
-        "Optimized applications for performance and accessibility",
-        "Participated in agile development processes and sprint planning"
-      ],
-      technologies: ["React", "Vue.js", "JavaScript", "CSS3", "Firebase", "Git"],
-      achievements: [
-        "Reduced page load time by 35% through performance optimization",
-        "Implemented responsive design supporting 5+ device types",
-        "Contributed to 15% increase in user engagement"
-      ]
-    },
-    {
-      title: "Software Developer Intern",
-      company: "DevHub Technologies", // Update with your company
-      location: "Bangalore, India", // Update with location
-      duration: "Jan 2021 - May 2021", // Update with your duration
+      title: "Software Development Engineer Intern",
+      company: "Mindstack",
+      location: "Bengaluru, India",
+      duration: "2024",
       type: "Internship",
-      description: "Gained hands-on experience in software development while working on real-world projects. Learned best practices and industry standards for web development.",
+      description: "Built a cloud-based communication platform integrating Flask (Python) with Twilio API to enable seamless IVR (Interactive Voice Response), automated call handling, and intelligent routing.",
       responsibilities: [
-        "Assisted in developing web applications using JavaScript and Python",
-        "Fixed bugs and implemented small features under senior developer guidance",
-        "Participated in daily standups and team meetings",
-        "Wrote unit tests and documentation for existing codebase",
-        "Learned version control systems and collaborative development"
+        "Designed dynamic IVR call flows using Twilio's Gather API",
+        "Implemented Flask endpoints (/voice, /menu) to handle real-time calls",
+        "Used ngrok for exposing local servers during testing",
+        "Integrated automated greetings, error handling, and intelligent call routing",
+        "Built department-specific call routing for Sales/Support/Agent"
       ],
-      technologies: ["JavaScript", "Python", "HTML", "CSS", "MySQL", "Git"],
+      technologies: ["Python", "Flask", "Twilio API", "RESTful Webhooks", "ngrok"],
       achievements: [
-        "Successfully completed 3 mini-projects during internship",
-        "Received positive feedback from mentors and team leads",
-        "Got full-time offer based on performance"
+        "Successfully delivered CCSI (Cloud Communication Solution) project",
+        "Implemented scalable & customizable solution for organizations",
+        "Built automated greeting & input collection system"
       ]
     }
   ];
