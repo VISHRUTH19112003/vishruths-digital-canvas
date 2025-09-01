@@ -83,29 +83,23 @@ const Skills = () => {
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-semibold mb-8">Certifications & Learning</h3>
           <div className="flex flex-wrap justify-center gap-4">
-            {/* 
-              UPDATE SECTION: Add your certifications or current learning below
-            */}
-            {/* 
-              UPDATE SECTION: Add your certifications or current learning below
-            */}
             <Badge 
               variant="outline" 
               className="text-lg py-2 px-4 border-github-green text-github-green hover:bg-github-green-muted"
             >
-              Data Analytics & Big Data
+              Full-Stack Web App Development - Udemy
             </Badge>
             <Badge 
               variant="outline" 
               className="text-lg py-2 px-4 border-github-green text-github-green hover:bg-github-green-muted"
             >
-              Socket Programming
+              UiPath Automation Developer Associate - UiPath Academy
             </Badge>
             <Badge 
               variant="outline" 
               className="text-lg py-2 px-4 border-github-green text-github-green hover:bg-github-green-muted"
             >
-              Currently Learning: Advanced AI/ML
+              Applications & Use Cases Professional - RAPIDMINER
             </Badge>
           </div>
         </div>
