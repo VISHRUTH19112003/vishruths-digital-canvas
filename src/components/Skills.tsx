@@ -87,7 +87,7 @@ const Skills = () => {
               variant="outline" 
               className="text-lg py-2 px-4 border-github-green text-github-green hover:bg-github-green-muted"
             >
-              Full-Stack Web App Development - Udemy
+              Build a Full-Stack Web App in a Weekend - Udemy
             </Badge>
             <Badge 
               variant="outline" 
@@ -100,6 +100,12 @@ const Skills = () => {
               className="text-lg py-2 px-4 border-github-green text-github-green hover:bg-github-green-muted"
             >
               Applications & Use Cases Professional - RAPIDMINER
+            </Badge>
+            <Badge 
+              variant="outline" 
+              className="text-lg py-2 px-4 border-github-green text-github-green hover:bg-github-green-muted"
+            >
+              Currently Learning: RAG Agents with APIs/MCP, LangChain & n8n
             </Badge>
           </div>
         </div>
