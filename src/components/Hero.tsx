@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
-import profileImage from "/lovable-uploads/33057765-5168-4c87-acc4-838e79fbb7b4.png";
+import profileImageWebP from "/lovable-uploads/vishruth-profile-optimized.webp";
+import profileImageFallback from "/lovable-uploads/33057765-5168-4c87-acc4-838e79fbb7b4.png";
 
 const Hero = () => {
   return (
@@ -10,11 +11,17 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="flex-shrink-0">
             <div className="relative">
-              <img
-                src={profileImage}
-                alt="Vishruth - Software Developer"
-                className="w-64 h-64 rounded-full border-4 border-github-green shadow-github object-cover"
-              />
+              <picture>
+                <source srcSet={profileImageWebP} type="image/webp" />
+                <img
+                  src={profileImageFallback}
+                  alt="Vishruth - Software Developer"
+                  className="w-64 h-64 rounded-full border-4 border-github-green shadow-github object-cover"
+                  width="256"
+                  height="256"
+                  loading="eager"
+                />
+              </picture>
               <div className="absolute inset-0 rounded-full border-4 border-github-green animate-pulse opacity-20"></div>
             </div>
           </div>
