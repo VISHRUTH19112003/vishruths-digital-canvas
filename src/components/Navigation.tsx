@@ -83,7 +83,7 @@ const Navigation = () => {
               asChild
             >
               <a
-                href="https://github.com/vishruth" // Update with your GitHub
+                href="https://github.com/VISHRUTH19112003"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -97,7 +97,7 @@ const Navigation = () => {
               className="bg-primary hover:bg-primary/90"
               onClick={() => {
                 // Open resume in new tab
-                window.open('/lovable-uploads/3cf015bf-6df5-4f0b-bb40-845dd69b594b.png', '_blank');
+                window.open('/lovable-uploads/7b5031f3-3c90-4e21-b1f2-6d74c26455a3.png', '_blank');
               }}
             >
               <Download className="w-4 h-4 mr-2" />
@@ -142,7 +142,7 @@ const Navigation = () => {
                   asChild
                 >
                   <a
-                    href="https://github.com/vishruth" // Update with your GitHub
+                    href="https://github.com/VISHRUTH19112003"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -155,7 +155,7 @@ const Navigation = () => {
                   className="w-full bg-primary hover:bg-primary/90"
                   onClick={() => {
                     // Open resume in new tab
-                    window.open('/lovable-uploads/3cf015bf-6df5-4f0b-bb40-845dd69b594b.png', '_blank');
+                    window.open('/lovable-uploads/7b5031f3-3c90-4e21-b1f2-6d74c26455a3.png', '_blank');
                     setIsOpen(false);
                   }}
                 >
