@@ -56,7 +56,7 @@ const Footer = () => {
               UPDATE SECTION: Update your social media links below
             */}
             <a
-              href="https://github.com/vishruth" // Update with your GitHub
+              href="https://github.com/VISHRUTH19112003"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-github-surface rounded-lg border border-github-border flex items-center justify-center hover:bg-github-green-muted hover:border-github-green transition-smooth"
@@ -66,7 +66,7 @@ const Footer = () => {
             </a>
             
             <a
-              href="https://linkedin.com/in/vishruth" // Update with your LinkedIn
+              href="https://www.linkedin.com/in/vishruth-h-v-86891b341/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-github-surface rounded-lg border border-github-border flex items-center justify-center hover:bg-github-green-muted hover:border-github-green transition-smooth"
@@ -76,7 +76,7 @@ const Footer = () => {
             </a>
             
             <a
-              href="mailto:vishruth@example.com" // Update with your email
+              href="mailto:vishruthhv@outlook.com"
               className="w-10 h-10 bg-github-surface rounded-lg border border-github-border flex items-center justify-center hover:bg-github-green-muted hover:border-github-green transition-smooth"
               aria-label="Send Email"
             >

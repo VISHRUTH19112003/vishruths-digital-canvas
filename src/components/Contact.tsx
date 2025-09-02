@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
 
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -44,10 +44,10 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold">Email</h4>
                   <a 
-                    href="mailto:vishruth@example.com" // Update with your email
+                    href="mailto:vishruthhv@outlook.com"
                     className="text-muted-foreground hover:text-github-green transition-smooth"
                   >
-                    vishruth@example.com
+                    vishruthhv@outlook.com
                   </a>
                 </div>
               </div>
@@ -59,10 +59,10 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold">Phone</h4>
                   <a 
-                    href="tel:+919876543210" // Update with your phone
+                    href="tel:+918217896138"
                     className="text-muted-foreground hover:text-github-green transition-smooth"
                   >
-                    +91 98765 43210
+                    +91-8217896138
                   </a>
                 </div>
               </div>
@@ -86,7 +86,7 @@ const Contact = () => {
                   UPDATE SECTION: Update your social media links below
                 */}
                 <a
-                  href="https://github.com/vishruth" // Update with your GitHub
+                  href="https://github.com/VISHRUTH19112003"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-github-surface rounded-lg border border-github-border flex items-center justify-center hover:bg-github-green-muted hover:border-github-green transition-smooth"
@@ -95,21 +95,12 @@ const Contact = () => {
                 </a>
                 
                 <a
-                  href="https://linkedin.com/in/vishruth" // Update with your LinkedIn
+                  href="https://www.linkedin.com/in/vishruth-h-v-86891b341/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-github-surface rounded-lg border border-github-border flex items-center justify-center hover:bg-github-green-muted hover:border-github-green transition-smooth"
                 >
                   <Linkedin className="w-5 h-5" />
-                </a>
-                
-                <a
-                  href="https://twitter.com/vishruth" // Update with your Twitter
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-github-surface rounded-lg border border-github-border flex items-center justify-center hover:bg-github-green-muted hover:border-github-green transition-smooth"
-                >
-                  <Twitter className="w-5 h-5" />
                 </a>
               </div>
             </div>

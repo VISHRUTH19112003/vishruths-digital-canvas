@@ -62,7 +62,7 @@ const Hero = () => {
                 className="border-github-border hover:bg-github-surface"
                 onClick={() => {
                   // Open resume in new tab
-                  window.open('/lovable-uploads/3cf015bf-6df5-4f0b-bb40-845dd69b594b.png', '_blank');
+                  window.open('/lovable-uploads/7b5031f3-3c90-4e21-b1f2-6d74c26455a3.png', '_blank');
                 }}
               >
                 <Download className="w-5 h-5 mr-2" />
@@ -76,7 +76,7 @@ const Hero = () => {
                 UPDATE SECTION: Add your actual social media links below
               */}
               <a
-                href="https://github.com/vishruth" // Update with your GitHub
+                href="https://github.com/VISHRUTH19112003"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-github-green transition-smooth"
@@ -85,7 +85,7 @@ const Hero = () => {
               </a>
               
               <a
-                href="https://linkedin.com/in/vishruth" // Update with your LinkedIn
+                href="https://www.linkedin.com/in/vishruth-h-v-86891b341/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-github-green transition-smooth"
@@ -94,7 +94,7 @@ const Hero = () => {
               </a>
               
               <a
-                href="mailto:vishruth@example.com" // Update with your email
+                href="mailto:vishruthhv@outlook.com"
                 className="text-muted-foreground hover:text-github-green transition-smooth"
               >
                 <Mail className="w-6 h-6" />
