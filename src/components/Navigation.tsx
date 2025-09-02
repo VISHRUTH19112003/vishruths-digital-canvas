@@ -32,6 +32,16 @@ const Navigation = () => {
     setIsOpen(false);
   };
 
+  const downloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/lovable-uploads/7b5031f3-3c90-4e21-b1f2-6d74c26455a3.png';
+    link.download = 'Vishruth_Resume.png';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -95,10 +105,7 @@ const Navigation = () => {
             <Button 
               size="sm" 
               className="bg-primary hover:bg-primary/90"
-              onClick={() => {
-                // Open resume in new tab
-                window.open('/lovable-uploads/7b5031f3-3c90-4e21-b1f2-6d74c26455a3.png', '_blank');
-              }}
+              onClick={downloadResume}
             >
               <Download className="w-4 h-4 mr-2" />
               Resume
@@ -154,8 +161,7 @@ const Navigation = () => {
                 <Button 
                   className="w-full bg-primary hover:bg-primary/90"
                   onClick={() => {
-                    // Open resume in new tab
-                    window.open('/lovable-uploads/7b5031f3-3c90-4e21-b1f2-6d74c26455a3.png', '_blank');
+                    downloadResume();
                     setIsOpen(false);
                   }}
                 >

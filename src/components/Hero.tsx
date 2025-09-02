@@ -68,8 +68,13 @@ const Hero = () => {
                 size="lg" 
                 className="border-github-border hover:bg-github-surface"
                 onClick={() => {
-                  // Open resume in new tab
-                  window.open('/lovable-uploads/7b5031f3-3c90-4e21-b1f2-6d74c26455a3.png', '_blank');
+                  const link = document.createElement('a');
+                  link.href = '/lovable-uploads/7b5031f3-3c90-4e21-b1f2-6d74c26455a3.png';
+                  link.download = 'Vishruth_Resume.png';
+                  link.target = '_blank';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
                 }}
               >
                 <Download className="w-5 h-5 mr-2" />
