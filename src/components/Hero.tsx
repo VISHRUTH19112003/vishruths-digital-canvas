@@ -67,14 +67,33 @@ const Hero = () => {
                 variant="outline" 
                 size="lg" 
                 className="border-github-border hover:bg-github-surface"
-                onClick={() => {
-                  const link = document.createElement('a');
-                  link.href = '/lovable-uploads/7b5031f3-3c90-4e21-b1f2-6d74c26455a3.png';
-                  link.download = 'Vishruth_Resume.png';
-                  link.target = '_blank';
-                  document.body.appendChild(link);
-                  link.click();
-                  document.body.removeChild(link);
+                onClick={async () => {
+                  try {
+                    console.log('Hero: Starting resume download...');
+                    
+                    // Check if file exists
+                    const response = await fetch('/lovable-uploads/7b5031f3-3c90-4e21-b1f2-6d74c26455a3.png');
+                    if (!response.ok) {
+                      console.error('Hero: Resume file not found:', response.status);
+                      alert('Resume file not found. Please contact the site administrator.');
+                      return;
+                    }
+                    
+                    console.log('Hero: Resume file found, starting download...');
+                    
+                    const link = document.createElement('a');
+                    link.href = '/lovable-uploads/7b5031f3-3c90-4e21-b1f2-6d74c26455a3.png';
+                    link.download = 'Vishruth_Resume.png';
+                    link.target = '_blank';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    
+                    console.log('Hero: Download initiated successfully');
+                  } catch (error) {
+                    console.error('Hero: Error downloading resume:', error);
+                    alert('Failed to download resume. Please try again or contact support.');
+                  }
                 }}
               >
                 <Download className="w-5 h-5 mr-2" />
