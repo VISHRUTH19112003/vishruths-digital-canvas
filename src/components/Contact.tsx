@@ -7,8 +7,21 @@ import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted");
+    const formData = new FormData(e.target as HTMLFormElement);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      subject: formData.get('subject'),
+      message: formData.get('message')
+    };
+    
+    // Create mailto link with form data
+    const subject = encodeURIComponent(data.subject as string);
+    const body = encodeURIComponent(
+      `Hi Vishruth,\n\nName: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`
+    );
+    
+    window.location.href = `mailto:vishruthhv@outlook.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -38,14 +51,14 @@ const Contact = () => {
                 UPDATE SECTION: Update your contact information below
               */}
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-github-surface rounded-lg border border-github-border flex items-center justify-center">
-                  <Mail className="w-5 h-5 text-github-green" />
+                <div className="w-12 h-12 bg-surface rounded-lg border border-border flex items-center justify-center">
+                  <Mail className="w-5 h-5 text-accent-warm" />
                 </div>
                 <div>
                   <h4 className="font-semibold">Email</h4>
                   <a 
                     href="mailto:vishruthhv@outlook.com"
-                    className="text-muted-foreground hover:text-github-green transition-smooth"
+                    className="text-muted-foreground hover:text-accent-warm transition-smooth"
                   >
                     vishruthhv@outlook.com
                   </a>
@@ -53,14 +66,14 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-github-surface rounded-lg border border-github-border flex items-center justify-center">
-                  <Phone className="w-5 h-5 text-github-green" />
+                <div className="w-12 h-12 bg-surface rounded-lg border border-border flex items-center justify-center">
+                  <Phone className="w-5 h-5 text-accent-warm" />
                 </div>
                 <div>
                   <h4 className="font-semibold">Phone</h4>
                   <a 
                     href="tel:+918217896138"
-                    className="text-muted-foreground hover:text-github-green transition-smooth"
+                    className="text-muted-foreground hover:text-accent-warm transition-smooth"
                   >
                     +91-8217896138
                   </a>
@@ -68,8 +81,8 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-github-surface rounded-lg border border-github-border flex items-center justify-center">
-                  <MapPin className="w-5 h-5 text-github-green" />
+                <div className="w-12 h-12 bg-surface rounded-lg border border-border flex items-center justify-center">
+                  <MapPin className="w-5 h-5 text-accent-warm" />
                 </div>
                 <div>
                   <h4 className="font-semibold">Location</h4>
@@ -89,7 +102,7 @@ const Contact = () => {
                   href="https://github.com/VISHRUTH19112003"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-github-surface rounded-lg border border-github-border flex items-center justify-center hover:bg-github-green-muted hover:border-github-green transition-smooth"
+                  className="w-12 h-12 bg-surface rounded-lg border border-border flex items-center justify-center hover:bg-accent-warm/10 hover:border-accent-warm transition-smooth"
                 >
                   <Github className="w-5 h-5" />
                 </a>
@@ -98,7 +111,7 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/vishruth-h-v-86891b341/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-github-surface rounded-lg border border-github-border flex items-center justify-center hover:bg-github-green-muted hover:border-github-green transition-smooth"
+                  className="w-12 h-12 bg-surface rounded-lg border border-border flex items-center justify-center hover:bg-accent-warm/10 hover:border-accent-warm transition-smooth"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
@@ -107,7 +120,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <Card className="bg-card border-github-border shadow-card">
+          <Card className="bg-card border-border shadow-card">
             <CardHeader>
               <CardTitle>Send Me a Message</CardTitle>
             </CardHeader>
@@ -120,10 +133,11 @@ const Contact = () => {
                     </label>
                     <Input
                       id="name"
+                      name="name"
                       type="text"
                       placeholder="Your name"
                       required
-                      className="bg-github-surface border-github-border focus:ring-github-green focus:border-github-green"
+                      className="bg-surface border-border focus:ring-accent-warm focus:border-accent-warm"
                     />
                   </div>
                   
@@ -133,10 +147,11 @@ const Contact = () => {
                     </label>
                     <Input
                       id="email"
+                      name="email"
                       type="email"
                       placeholder="your.email@example.com"
                       required
-                      className="bg-github-surface border-github-border focus:ring-github-green focus:border-github-green"
+                      className="bg-surface border-border focus:ring-accent-warm focus:border-accent-warm"
                     />
                   </div>
                 </div>
@@ -147,10 +162,11 @@ const Contact = () => {
                   </label>
                   <Input
                     id="subject"
+                    name="subject"
                     type="text"
                     placeholder="What's this about?"
                     required
-                    className="bg-github-surface border-github-border focus:ring-github-green focus:border-github-green"
+                    className="bg-surface border-border focus:ring-accent-warm focus:border-accent-warm"
                   />
                 </div>
 
@@ -160,10 +176,11 @@ const Contact = () => {
                   </label>
                   <Textarea
                     id="message"
+                    name="message"
                     placeholder="Tell me about your project or opportunity..."
                     rows={6}
                     required
-                    className="bg-github-surface border-github-border focus:ring-github-green focus:border-github-green resize-none"
+                    className="bg-surface border-border focus:ring-accent-warm focus:border-accent-warm resize-none"
                   />
                 </div>
 

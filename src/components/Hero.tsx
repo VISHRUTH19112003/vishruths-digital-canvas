@@ -49,9 +49,9 @@ const Hero = () => {
                 size="lg" 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground"
                 onClick={() => {
-                  const contactSection = document.querySelector('#contact');
-                  if (contactSection) {
-                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                  const projectsSection = document.querySelector('#projects');
+                  if (projectsSection) {
+                    projectsSection.scrollIntoView({ behavior: 'smooth' });
                   }
                 }}
               >

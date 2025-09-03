@@ -1,5 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Github, ExternalLink } from "lucide-react";
 
 const Projects = () => {
   /* 
@@ -12,14 +14,17 @@ const Projects = () => {
       description: "Advanced personal finance web app built with Next.js, featuring AI-powered financial category suggestions, session-based persistence, CSV export, and data visualization with Recharts.",
       image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500&h=300&fit=crop",
       technologies: ["Next.js", "React", "TailwindCSS", "ShadCN", "Genkit AI", "Recharts"],
-      featured: true
+      featured: true,
+      liveDemo: "https://session-budget-kappa.vercel.app/",
+      github: "https://github.com/VISHRUTH19112003/Session-Budget"
     },
     {
       title: "LLM-Powered Chatbot (Hackathon Winner)",
       description: "College hackathon winning project featuring LLM-powered chatbot with voice recognition and text-based chat capabilities. Built with team members Sourya Sarkar & Suraj N Reddy.",
       image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=500&h=300&fit=crop",
       technologies: ["Python", "LLM", "Voice Recognition", "Flask", "JavaScript"],
-      featured: true
+      featured: true,
+      github: "https://github.com/VISHRUTH19112003"
     },
     {
       title: "TaskFlow - Advanced To-Do App",
@@ -69,7 +74,7 @@ const Projects = () => {
   const otherProjects = projects.filter(project => !project.featured);
 
   return (
-    <section id="projects" className="py-20 bg-github-surface/50">
+    <section id="projects" className="py-20 bg-surface/50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
@@ -83,7 +88,7 @@ const Projects = () => {
           {featuredProjects.map((project, index) => (
             <Card 
               key={index} 
-              className="bg-card border-github-border shadow-card hover:shadow-github transition-smooth overflow-hidden group"
+              className="bg-card border-border shadow-card hover:shadow-accent-warm/20 transition-smooth overflow-hidden group"
             >
               <div className="relative overflow-hidden">
                 <img 
@@ -100,16 +105,40 @@ const Projects = () => {
               </CardHeader>
               
               <CardContent>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
                     <Badge 
                       key={techIndex}
                       variant="secondary"
-                      className="bg-github-surface border-github-border"
+                      className="bg-accent-warm/10 border-accent-warm/20 text-accent-warm"
                     >
                       {tech}
                     </Badge>
                   ))}
+                </div>
+                
+                <div className="flex gap-3">
+                  {project.liveDemo && (
+                    <Button
+                      size="sm"
+                      onClick={() => window.open(project.liveDemo, '_blank')}
+                      className="flex-1 bg-accent-warm hover:bg-accent-warm/90 text-background"
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Live Demo
+                    </Button>
+                  )}
+                  {project.github && (
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={() => window.open(project.github, '_blank')}
+                      className="flex-1 border-accent-warm/30 hover:bg-accent-warm/10"
+                    >
+                      <Github className="w-4 h-4 mr-2" />
+                      GitHub
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>
@@ -125,7 +154,7 @@ const Projects = () => {
           {otherProjects.map((project, index) => (
             <Card 
               key={index} 
-              className="bg-card border-github-border shadow-card hover:shadow-github transition-smooth"
+              className="bg-card border-border shadow-card hover:shadow-accent-warm/20 transition-smooth"
             >
               <CardHeader>
                 <CardTitle className="text-lg">{project.title}</CardTitle>
@@ -133,12 +162,12 @@ const Projects = () => {
               </CardHeader>
               
               <CardContent>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.slice(0, 3).map((tech, techIndex) => (
                     <Badge 
                       key={techIndex}
                       variant="secondary"
-                      className="bg-github-surface border-github-border text-xs"
+                      className="bg-accent-warm/10 border-accent-warm/20 text-accent-warm text-xs"
                     >
                       {tech}
                     </Badge>
@@ -146,10 +175,34 @@ const Projects = () => {
                   {project.technologies.length > 3 && (
                     <Badge 
                       variant="secondary"
-                      className="bg-github-surface border-github-border text-xs"
+                      className="bg-accent-warm/10 border-accent-warm/20 text-accent-warm text-xs"
                     >
                       +{project.technologies.length - 3} more
                     </Badge>
+                  )}
+                </div>
+                
+                <div className="flex gap-2">
+                  {project.liveDemo && (
+                    <Button
+                      size="sm"
+                      onClick={() => window.open(project.liveDemo, '_blank')}
+                      className="flex-1 bg-accent-warm hover:bg-accent-warm/90 text-background text-xs"
+                    >
+                      <ExternalLink className="w-3 h-3 mr-1" />
+                      Demo
+                    </Button>
+                  )}
+                  {project.github && (
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={() => window.open(project.github, '_blank')}
+                      className="flex-1 border-accent-warm/30 hover:bg-accent-warm/10 text-xs"
+                    >
+                      <Github className="w-3 h-3 mr-1" />
+                      Code
+                    </Button>
                   )}
                 </div>
               </CardContent>
