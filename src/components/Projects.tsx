@@ -31,42 +31,54 @@ const Projects = () => {
       description: "Full-stack task management application with prioritization, categories, reminders, and modern UI. Features real-time sync and user authentication.",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
       technologies: ["React", "Firebase", "Supabase", "TailwindCSS"],
-      featured: false
+      featured: false,
+      liveDemo: "#", // Replace with your actual demo link
+      github: "https://github.com/VISHRUTH19112003"
     },
     {
       title: "Deep Q-Learning Snake Game AI",
       description: "Reinforcement Learning AI agent for Snake Game implemented with PyTorch and Pygame. Features training visualization and performance metrics.",
       image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=500&h=300&fit=crop",
       technologies: ["Python", "PyTorch", "Pygame", "Deep Q-Learning"],
-      featured: false
+      featured: false,
+      liveDemo: "#", // Replace with your actual demo link
+      github: "https://github.com/VISHRUTH19112003"
     },
     {
       title: "Fake Review Detection System",
       description: "MLG AAT project implementing 3 ML models including ensemble methods for detecting fake reviews, based on recent research papers. Deployed as mobile/web app.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
       technologies: ["Python", "Scikit-learn", "Flask", "Machine Learning"],
-      featured: false
+      featured: false,
+      liveDemo: "#", // Replace with your actual demo link
+      github: "https://github.com/VISHRUTH19112003"
     },
     {
       title: "YouTube Trending Analyzer",
       description: "Big Data project using Hadoop and Spark to analyze large-scale YouTube datasets and extract insights about trending videos and user behavior patterns.",
       image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&h=300&fit=crop",
       technologies: ["Hadoop", "Spark", "Python", "Big Data Analytics"],
-      featured: false
+      featured: false,
+      liveDemo: "#", // Replace with your actual demo link
+      github: "https://github.com/VISHRUTH19112003"
     },
     {
       title: "E-Commerce Bag Retail Platform",
       description: "Amazon-like bag retail platform with comprehensive features including product catalog, shopping cart, checkout system, and user management.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
       technologies: ["React", "Node.js", "MongoDB", "Express.js"],
-      featured: false
+      featured: false,
+      liveDemo: "#", // Replace with your actual demo link
+      github: "https://github.com/VISHRUTH19112003"
     },
     {
       title: "Hotel Management System",
       description: "Comprehensive hotel management system built with npm and Vite, featuring booking management, billing system, and customer records management.",
       image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&h=300&fit=crop",
       technologies: ["JavaScript", "Vite", "HTML5", "CSS3"],
-      featured: false
+      featured: false,
+      liveDemo: "#", // Replace with your actual demo link
+      github: "https://github.com/VISHRUTH19112003"
     }
   ];
 
