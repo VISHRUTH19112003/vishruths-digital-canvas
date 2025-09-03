@@ -52,11 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// GitHub-style custom colors
+				// Warm amber theme colors
 				'github-green': 'hsl(var(--github-green))',
 				'github-green-muted': 'hsl(var(--github-green-muted))',
 				'github-surface': 'hsl(var(--github-surface))',
 				'github-border': 'hsl(var(--github-border))',
+				'accent-warm': 'hsl(var(--accent-warm))',
+				'accent-warm-muted': 'hsl(var(--accent-warm-muted))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -80,6 +82,7 @@ export default {
 			boxShadow: {
 				'github': 'var(--shadow-github)',
 				'card': 'var(--shadow-card)',
+				'glow': 'var(--shadow-glow)',
 			},
 			transition: {
 				'smooth': 'var(--transition-smooth)',

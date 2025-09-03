@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
-import profileImageWebP from "/lovable-uploads/vishruth-profile-optimized.webp";
-import profileImageFallback from "/lovable-uploads/33057765-5168-4c87-acc4-838e79fbb7b4.png";
+import profileImage from "/lovable-uploads/a312acfd-46f9-4c6e-a0a0-6a7c2eca7474.png";
 
 const Hero = () => {
   return (
@@ -11,18 +10,15 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="flex-shrink-0">
             <div className="relative">
-              <picture>
-                <source srcSet={profileImageWebP} type="image/webp" />
-                <img
-                  src={profileImageFallback}
-                  alt="Vishruth - Software Developer"
-                  className="w-64 h-64 rounded-full border-4 border-github-green shadow-github object-cover"
-                  width="256"
-                  height="256"
-                  loading="eager"
-                />
-              </picture>
-              <div className="absolute inset-0 rounded-full border-4 border-github-green animate-pulse opacity-20"></div>
+              <img
+                src={profileImage}
+                alt="Vishruth - Software Developer"
+                className="w-64 h-64 rounded-full border-4 border-accent-warm shadow-glow object-cover"
+                width="256"
+                height="256"
+                loading="eager"
+              />
+              <div className="absolute inset-0 rounded-full border-4 border-accent-warm animate-pulse opacity-20"></div>
             </div>
           </div>
 
@@ -110,7 +106,7 @@ const Hero = () => {
                 href="https://github.com/VISHRUTH19112003"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-github-green transition-smooth"
+                className="text-muted-foreground hover:text-accent-warm transition-smooth"
               >
                 <Github className="w-6 h-6" />
               </a>
@@ -119,14 +115,14 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/vishruth-h-v-86891b341/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-github-green transition-smooth"
+                className="text-muted-foreground hover:text-accent-warm transition-smooth"
               >
                 <Linkedin className="w-6 h-6" />
               </a>
               
               <a
                 href="mailto:vishruthhv@outlook.com"
-                className="text-muted-foreground hover:text-github-green transition-smooth"
+                className="text-muted-foreground hover:text-accent-warm transition-smooth"
               >
                 <Mail className="w-6 h-6" />
               </a>

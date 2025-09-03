@@ -16,7 +16,7 @@
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
     
-    --primary: 142 76% 36%;
+    --primary: 35 91% 55%;
     --primary-foreground: 0 0% 98%;
     
     --secondary: 240 3.7% 15.9%;
@@ -33,23 +33,26 @@
     
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
-    --ring: 142 76% 36%;
+    --ring: 35 91% 55%;
     
     --radius: 0.5rem;
     
-    /* Custom GitHub-style tokens */
-    --github-green: 142 76% 36%;
-    --github-green-muted: 142 76% 36% / 0.1;
+    /* Custom warm amber theme tokens */
+    --github-green: 35 91% 55%;
+    --github-green-muted: 35 91% 55% / 0.1;
     --github-surface: 240 6% 10%;
     --github-border: 240 6% 20%;
+    --accent-warm: 35 91% 55%;
+    --accent-warm-muted: 35 91% 55% / 0.1;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 45%));
-    --gradient-hero: radial-gradient(ellipse at top, hsl(142 76% 36% / 0.1), transparent 50%);
+    --gradient-primary: linear-gradient(135deg, hsl(35 91% 55%), hsl(42 87% 60%));
+    --gradient-hero: radial-gradient(ellipse at top, hsl(35 91% 55% / 0.1), transparent 50%);
     
     /* Shadows */
     --shadow-github: 0 8px 24px hsl(240 10% 3.9% / 0.12);
     --shadow-card: 0 1px 3px hsl(240 10% 3.9% / 0.12), 0 1px 2px hsl(240 10% 3.9% / 0.24);
+    --shadow-glow: 0 0 40px hsl(35 91% 55% / 0.3);
     
     /* Animations */
     --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -139,7 +142,7 @@
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-github-green;
+    @apply bg-accent-warm;
   }
 }
 
