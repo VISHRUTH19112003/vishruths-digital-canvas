@@ -24,7 +24,7 @@ const Projects = () => {
         "Recharts",
       ],
       featured: true,
-      liveDemo: "spectacular-kangaroo-48178d.netlify.app",
+      liveDemo: "https://spectacular-kangaroo-48178d.netlify.app",
       github: "https://github.com/VISHRUTH19112003/Session-Budget",
     },
     {
