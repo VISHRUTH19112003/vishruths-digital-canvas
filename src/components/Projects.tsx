@@ -28,7 +28,7 @@ const Projects = () => {
       github: "https://github.com/VISHRUTH19112003/Session-Budget",
     },
     {
-      title: "LLM-Powered Chatbot (Hackathon Winner)",
+      title: "Swasthya AI",
       description:
         "College hackathon winning project featuring LLM-powered chatbot with voice recognition and text-based chat capabilities. Built with team members Sourya Sarkar & Suraj N Reddy.",
       image:
@@ -42,7 +42,7 @@ const Projects = () => {
       ],
       featured: true,
       liveDemo: "https://swasthyahealthai.netlify.app/",
-      github: "https://github.com/VISHRUTH19112003",
+      github: "https://github.com/VISHRUTH19112003/Swasthya-AI",
     },
     {
       title: "TaskFlow - Advanced To-Do App",
