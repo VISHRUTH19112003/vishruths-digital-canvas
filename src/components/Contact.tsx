@@ -3,25 +3,42 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
+import { useState } from "react";
 
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
     const formData = new FormData(e.target as HTMLFormElement);
     const data = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      subject: formData.get('subject'),
-      message: formData.get('message')
+      name: formData.get('name') as string,
+      email: formData.get('email') as string,
+      subject: formData.get('subject') as string,
+      message: formData.get('message') as string,
     };
-    
-    // Create mailto link with form data
-    const subject = encodeURIComponent(data.subject as string);
-    const body = encodeURIComponent(
-      `Hi Vishruth,\n\nName: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`
-    );
-    
-    window.location.href = `mailto:vishruthhv@outlook.com?subject=${subject}&body=${body}`;
+
+    try {
+      const { data: result, error } = await supabase.functions.invoke('send-contact-email', {
+        body: data,
+      });
+
+      if (error) throw error;
+
+      setSubmitStatus('success');
+      // Reset form
+      (e.target as HTMLFormElement).reset();
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -186,11 +203,24 @@ const Contact = () => {
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                  disabled={isSubmitting}
+                  className="w-full bg-accent-warm hover:bg-accent-warm/90 text-background disabled:opacity-50"
                 >
                   <Send className="w-4 h-4 mr-2" />
-                  Send Message
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </Button>
+
+                {submitStatus === 'success' && (
+                  <div className="text-center text-sm text-green-600 bg-green-50 border border-green-200 rounded-md p-3">
+                    ✅ Message sent successfully! I'll get back to you soon.
+                  </div>
+                )}
+
+                {submitStatus === 'error' && (
+                  <div className="text-center text-sm text-red-600 bg-red-50 border border-red-200 rounded-md p-3">
+                    ❌ Failed to send message. Please try again or email me directly.
+                  </div>
+                )}
               </form>
             </CardContent>
           </Card>
