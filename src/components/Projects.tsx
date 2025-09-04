@@ -226,30 +226,6 @@ const Projects = () => {
                     </Badge>
                   )}
                 </div>
-
-                <div className="flex gap-2">
-                  {project.liveDemo && (
-                    <Button
-                      size="sm"
-                      onClick={() => window.open(project.liveDemo, "_blank")}
-                      className="flex-1 bg-accent-warm hover:bg-accent-warm/90 text-background text-xs"
-                    >
-                      <ExternalLink className="w-3 h-3 mr-1" />
-                      Demo
-                    </Button>
-                  )}
-                  {project.github && (
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      onClick={() => window.open(project.github, "_blank")}
-                      className="flex-1 border-accent-warm/30 hover:bg-accent-warm/10 text-xs"
-                    >
-                      <Github className="w-3 h-3 mr-1" />
-                      Code
-                    </Button>
-                  )}
-                </div>
               </CardContent>
             </Card>
           ))}
